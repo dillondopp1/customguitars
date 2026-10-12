@@ -6,7 +6,7 @@ A full static website for **Obsidian Guitars** (dba Obsidian Instruments Co.), a
 
 - **Name:** Obsidian Guitars — evokes precision, dark craftsmanship, premium feel.
 - **Positioning:** Small-batch, hand-built custom electric guitars for touring pros and serious collectors. Pricing from $4,200–$8,500+ to read as a legitimate premium boutique brand, not a mass-market shop.
-- **Lineup (4 models):** Apex (superstrat), Vantage (single-cut), Eclipse (headless), Solace (offset) — covers the major shape categories so every type of player has an entry point.
+- **Lineup (4 models):** Tephra (superstrat), Basalt (single-cut), Scoria (headless), Rhyolite (offset) — covers the major shape categories so every type of player has an entry point.
 - **Fictional details** (placeholders you should replace before launch): address (Asheville, NC), phone number, emails (`@obsidianguitars.com`), social handles.
 
 ## Site structure
@@ -14,10 +14,10 @@ A full static website for **Obsidian Guitars** (dba Obsidian Instruments Co.), a
 ```
 index.html              Home
 models.html              Model lineup
-model-apex.html           Individual model pages with specs + Product schema
-model-vantage.html
-model-eclipse.html
-model-solace.html
+model-tephra.html           Individual model pages with specs + Product schema
+model-basalt.html
+model-scoria.html
+model-rhyolite.html
 custom-shop.html          Lead-gen configurator form (feeds into Stripe checkout later)
 craftsmanship.html        Brand story / build process (builds trust + premium perception)
 gallery.html               Finished-build showcase
