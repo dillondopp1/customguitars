@@ -6,7 +6,7 @@
 <title>Custom Shop: Build Your Own Guitar, Pricing & Deposit | Obsidian Guitars</title>
 <meta name="description" content="Request a hand-built custom electric guitar. Base prices from $4,800, clear upgrade tiers, a fixed written quote and a 30% deposit to reserve one of 12 quarterly build slots.">
 <link rel="canonical" href="https://www.obsidianguitars.com/custom-shop.html">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="theme-color" content="#f3eee5">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -23,7 +23,7 @@
 <meta name="twitter:image" content="https://www.obsidianguitars.com/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -49,12 +49,12 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site">
   <nav class="nav" aria-label="Primary">
-    <a href="index.html" class="logo" aria-label="Obsidian Guitars, home"><img src="assets/logo-mark.svg" alt="" width="30" height="30"><img class="wordmark" src="assets/wordmark.svg" alt="" width="122" height="17"></a>
+    <a href="index.html" class="logo" aria-label="Obsidian Guitars, home"><img src="assets/logo-mark-ink.svg" alt="" width="30" height="30"><img class="wordmark" src="assets/wordmark-ink.svg" alt="" width="122" height="17"></a>
     <ul class="navlinks" id="primary-nav">
       <li><a href="models.html">Models</a></li><li><a href="craftsmanship.html">Craftsmanship</a></li><li><a href="custom-shop.html" aria-current="page">Custom Shop</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="blog/index.html">Journal</a></li><li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navcta">
-      <a href="custom-shop.html" class="btn solid">Reserve a Slot</a>
+      <a href="custom-shop.html" class="btn solid">Reserve a slot</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span class="bars" aria-hidden="true"></span></button>
     </div>
   </nav>
@@ -62,21 +62,23 @@
 <main id="main">
 <nav class="wrap crumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Custom Shop</li></ol></nav>
 <section class="page-top">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Custom Shop</span>
-      <h1>Spec the guitar only you will own.</h1>
+  <div class="wrap photo-split">
+    <div>
+      <h1>Spec your guitar here, and we&rsquo;ll send a fixed quote before you pay anything</h1>
       <p class="lead">Design your build below and watch it come together, then send it to us. A luthier replies within two business days with questions, then a written spec and a fixed quote. Nothing is charged until you approve it.</p>
       <p>We build 12 guitars a quarter. Typical build time is 12&ndash;16 weeks from deposit to shipping. Already know what you want? <a href="#request">Skip to the request form</a>.</p>
     </div>
+    <figure>
+      <!-- REPLACE: placeholder stock photo (Unsplash) - swap for your own shop photo -->
+      <img src="assets/photos/body-blank.jpg" alt="Close-up of a routed, unfinished electric guitar body blank resting on a workbench" width="1800" height="1351" fetchpriority="high">
+    </figure>
   </div>
 </section>
 
 <section id="configure" class="cfg" aria-labelledby="cfg-title" hidden>
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Configurator</span>
-      <h2 id="cfg-title">Design your build.</h2>
+      <h2 id="cfg-title">Choose a model, then work through the options</h2>
       <p>Work through the options and the guitar and estimate update as you go. Anything not listed here, from custom inlay artwork to a neck shape copied from your favorite guitar, we settle on the spec call.</p>
     </div>
     <div class="cfg-grid">
@@ -103,7 +105,7 @@
 
 <section class="band" id="request" aria-labelledby="form-title">
   <div class="wrap">
-    <h2 id="form-title" class="visually-hidden">Build request form</h2>
+    <div class="section-head"><h2 id="form-title">Send a build request</h2><p>If you used the configurator, your build is attached below. Otherwise, tell us roughly what you have in mind.</p></div>
     <div class="form-wrap">
       <form name="custom-build" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-obsidian-form class="" aria-label="Custom build request">
 <input type="hidden" name="form-name" value="custom-build">
@@ -144,8 +146,8 @@
 </section>
 
 <section aria-labelledby="how-title">
-  <div class="wrap">
-    <div class="section-head"><span class="eyebrow">How it works</span><h2 id="how-title">From request to your doorstep.</h2></div>
+  <div class="wrap split-4-6">
+    <div><h2 id="how-title">What happens after you send a request</h2><p>Six steps, and you can stop at any point before the deposit without paying anything.</p></div>
     <ol class="process-list">
       <li><div><h3>Build request</h3><p>The form above. Five minutes, no commitment.</p></div></li>
       <li><div><h3>Spec call</h3><p>Thirty to sixty minutes with the luthier who will build your guitar. We talk about how you play, not what to buy.</p></div></li>
@@ -160,13 +162,12 @@
 <section class="band" id="pricing" aria-labelledby="pricing-title">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Pricing</span>
-      <h2 id="pricing-title">Base price, plus only what you choose.</h2>
+      <h2 id="pricing-title">Base prices, and what each upgrade costs</h2>
       <p>Every base price includes a Quench neck, stainless frets, locking tuners, hand-cut bone or graphite nut, the full 37-point setup, a hardshell case and the Provenance File. Most finished builds land between $5,500 and $8,000.</p>
     </div>
-    <div class="table-scroll"><table class="specs-table"><caption class="visually-hidden">Base prices</caption><thead><tr><th scope="col">Model</th><th scope="col">Shape</th><th scope="col" style="text-align:right">Base price</th></tr></thead><tbody><tr><th scope="row"><a href="model-andesite.html">The Andesite</a></th><td>T-style</td><td class="num">$4,600</td></tr><tr><th scope="row"><a href="model-tephra.html">The Tephra</a></th><td>S-style superstrat</td><td class="num">$4,800</td></tr><tr><th scope="row"><a href="model-rhyolite.html">The Rhyolite</a></th><td>Chambered Offset</td><td class="num">$5,200</td></tr><tr><th scope="row"><a href="model-basalt.html">The Basalt</a></th><td>Single-Cut</td><td class="num">$5,900</td></tr><tr><th scope="row"><a href="model-scoria.html">The Scoria</a></th><td>Headless Multiscale</td><td class="num">$6,400</td></tr></tbody></table></div>
+    <div class="table-scroll"><table class="specs-table"><caption class="visually-hidden">Base prices</caption><thead><tr><th scope="col">Model</th><th scope="col">Shape</th><th scope="col" style="text-align:right">Base price</th></tr></thead><tbody><tr><th scope="row"><a href="model-andesite.html">The Andesite</a></th><td>T-style</td><td class="num">$4,600</td></tr><tr><th scope="row"><a href="model-tephra.html">The Tephra</a></th><td>S-style superstrat</td><td class="num">$4,800</td></tr><tr><th scope="row"><a href="model-rhyolite.html">The Rhyolite</a></th><td>Chambered offset</td><td class="num">$5,200</td></tr><tr><th scope="row"><a href="model-basalt.html">The Basalt</a></th><td>Single-cut</td><td class="num">$5,900</td></tr><tr><th scope="row"><a href="model-scoria.html">The Scoria</a></th><td>Headless multiscale</td><td class="num">$6,400</td></tr></tbody></table></div>
     <h3 style="margin-top:50px;">Upgrade tiers</h3>
-    <div class="tiers"><div><h3>Wood grade</h3><ul><li><span>Select: straight-grained, matched body and neck</span><span>Included</span></li><li><span>Master: figured top, flame or quilt</span><span>+$650</span></li><li><span>Reserve: a single bookmatched board you choose with us on video</span><span>+$1,500</span></li></ul></div><div><h3>Finish</h3><ul><li><span>Satin or solid-color gloss</span><span>Included</span></li><li><span>Translucent color or hand-shaded burst</span><span>+$450</span></li><li><span>Nitrocellulose lacquer, any color</span><span>+$600</span></li></ul></div><div><h3>Hardware</h3><ul><li><span>Nickel or black; locking tuners, stainless frets</span><span>Included</span></li><li><span>Gold or aged-nickel hardware</span><span>+$250</span></li><li><span>Premium tremolo or fixed-bridge upgrade</span><span>+$350</span></li></ul></div><div><h3>Inlays & configuration</h3><ul><li><span>Pearl shard side-offset inlays</span><span>Included</span></li><li><span>Abalone or brass shard inlays</span><span>+$300</span></li><li><span>Custom inlay artwork</span><span>From +$900</span></li><li><span>7-string / 8-string</span><span>+$350 / +$600</span></li><li><span>Multiscale (standard on Scoria)</span><span>+$450</span></li></ul></div></div>
+    <div class="tiers"><div><h3>Wood grade</h3><ul><li><span>Select: straight-grained, matched body and neck</span><span>Included</span></li><li><span>Master: figured top, flame or quilt</span><span>+$650</span></li><li><span>Reserve: a single bookmatched board you choose with us on video</span><span>+$1,500</span></li></ul></div><div><h3>Finish</h3><ul><li><span>Satin or solid-color gloss</span><span>Included</span></li><li><span>Translucent color or hand-shaded burst</span><span>+$450</span></li><li><span>Nitrocellulose lacquer, any color</span><span>+$600</span></li></ul></div><div><h3>Hardware</h3><ul><li><span>Nickel or black; locking tuners, stainless frets</span><span>Included</span></li><li><span>Gold or aged-nickel hardware</span><span>+$250</span></li><li><span>Premium tremolo or fixed-bridge upgrade</span><span>+$350</span></li></ul></div><div><h3>Inlays &amp; configuration</h3><ul><li><span>Pearl shard side-offset inlays</span><span>Included</span></li><li><span>Abalone or brass shard inlays</span><span>+$300</span></li><li><span>Custom inlay artwork</span><span>From +$900</span></li><li><span>7-string / 8-string</span><span>+$350 / +$600</span></li><li><span>Multiscale (standard on Scoria)</span><span>+$450</span></li></ul></div></div>
     <p class="note" style="margin-top:16px;">Shipping and any import duties are quoted separately at the spec stage. Left-handed builds are the same price.</p>
     <div class="terms-box" id="deposit">
       <p><strong>Deposit terms.</strong> A 30% deposit reserves your build slot once you approve your written spec and fixed quote. It is fully refundable until your wood is cut, less the cost of any parts already ordered for your build; once construction begins it is non-refundable. The remaining 70% is due when your guitar passes final inspection, before it ships.</p>
@@ -177,9 +178,8 @@
 
 <section class="cta-band">
   <div class="wrap">
-    <span class="eyebrow">Not ready yet?</span>
-    <h2>Join the waitlist and hear when slots open.</h2>
-    <a href="#waitlist" class="btn solid">Join the waitlist</a>
+    <h2>Not ready to send a request? The waitlist hears first when slots open</h2>
+    <div><p>One email when the next quarter&rsquo;s 12 slots open.</p><a href="#waitlist" class="btn solid">Join the waitlist</a></div>
   </div>
 </section>
 </main>
@@ -187,9 +187,8 @@
   <div class="wrap">
     <div class="waitlist" id="waitlist">
       <div>
-        <span class="eyebrow">Build-slot waitlist</span>
-        <h2>12 slots a quarter. The waitlist hears first.</h2>
-        <p>One email when a quarter&rsquo;s build slots open, plus the occasional note from the bench. No discounts, no noise.</p>
+        <h2>Get one email when the next quarter&rsquo;s build slots open</h2>
+        <p>We build 12 guitars a quarter and offer the slots to the waitlist before anyone else. Between those emails you might get the occasional note from the bench, and that&rsquo;s all.</p>
       </div>
       <div class="form-wrap">
         <form name="waitlist" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-obsidian-form class="inline-form" aria-label="Join the build-slot waitlist">
@@ -207,8 +206,8 @@
     </div>
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/logo.svg" alt="Obsidian Guitars" width="220" height="28">
-        <p style="max-width:300px;">Hand-built electric guitars. One builder per instrument, 12 build slots a quarter, every neck Quench-cured.</p>
+        <img src="assets/logo-light.svg" alt="Obsidian Guitars" width="220" height="28">
+        <p style="max-width:300px;">A small workshop building electric guitars to order. Each one is built start to finish by one luthier, on a Quench-cured neck.</p>
       </div>
       <div>
         <h2>Instruments</h2>
@@ -237,7 +236,7 @@
     </div>
     <div class="footer-bottom">
       <div>&copy; <span data-year>2026</span> Obsidian Instruments Co. All rights reserved.</div>
-      <div>Built slow, on purpose.</div>
+      <div>Electric guitars built to order, one bench, 12 a quarter</div>
     </div>
   </div>
 </footer>
