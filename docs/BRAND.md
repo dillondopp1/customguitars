@@ -122,7 +122,7 @@ Shipping and duties are quoted at the spec stage.
 
 ## 5. Deposit terms (single source of truth)
 
-> A 30% deposit reserves your build slot once you approve your written spec and fixed quote. It is fully refundable until your components are ordered, less the cost of any parts already ordered for your build; once construction begins it is non-refundable. The remaining 70% is due when your guitar passes final inspection, before it ships.
+> A 30% deposit reserves your build slot once you approve your written spec and fixed quote. Until construction begins it is refundable, less the cost of any components already ordered for your build; once construction begins it is non-refundable. The remaining 70% is due when your guitar passes final inspection, before it ships.
 
 **Why 30% (down from 50%):** It lowers the commitment barrier for a brand with no track record, while still covering materials and a meaningful share of labour. (13 Oct 2026: the trigger changed from "your wood is cut" to "your components are ordered", because the shop no longer cuts wood.) Making refundability depend on when we commit money to your build is fair and easy to explain, and it builds trust. It works with a deposit-then-balance checkout (two payments). It appears verbatim in the custom shop, FAQ, terms and the cost guide; change it in all four together.
 

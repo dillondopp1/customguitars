@@ -6,8 +6,7 @@
   // `price` is the list base price; `founders` is the Founders' Run base price
   // (instruments Nos. 1-25 only). Upgrades are charged at list either way.
 
-  // Mahogany neck on a bolt-on model. PLACEHOLDER: the owner must confirm
-  // this against supplier costs before launch (see README, "Business facts to confirm").
+  // Mahogany neck on a bolt-on model; price to confirm before launch (README, "Business facts to confirm").
   var NECK_MAHOGANY_PRICE = 150;
 
   // Neck woods. The first entry for each model is its standard (default) neck.
