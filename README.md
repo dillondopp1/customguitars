@@ -27,15 +27,16 @@ There are four forms: `custom-build` (custom-shop.html), `contact` (contact.html
 
 ### 2. Real photography (biggest lever on perceived value)
 
-All product imagery is illustrated SVG renders (`assets/render-*.svg`, rasters in `assets/render-*.jpg`). Replace them with real photographs as soon as instruments exist: dark seamless background, one warm key light, 2:1 crops for product shots. Keep file names (or update the `src`), and keep alt text accurate to the actual build.
+All product imagery is illustrated SVG renders (`assets/render-*.svg`, rasters in `assets/render-*.jpg`). Replace them with real photographs as soon as instruments exist: dark seamless background, one warm key light, 2:1 crops for product shots. The renders sit on dark "mats" on the light site, so dark-background photos drop straight in. The workshop atmosphere photos are Unsplash placeholders (see [`docs/CREDITS.md`](docs/CREDITS.md)); never caption them as Obsidian guitars, customer builds, our workshop or the founder. Keep file names (or update the `src`), and keep alt text accurate to the actual build.
 
 | Where | What to shoot | Marker |
 |---|---|---|
 | `model-*.html` top render | Full-front studio shot, 2:1 | `<!-- REPLACE: studio photograph ... -->` |
 | `model-*.html` second figure | Alternate finish or detail | caption says "Studio render" |
 | `gallery.html` | Finished Founders' Run builds | `<!-- REPLACE: swap each render ... -->` |
-| `index.html` hero | Hero shot, 2:1, guitar on dark | uses `render-basalt.svg` |
-| `index.html`, `about.html` portraits | Founder at the bench, 4:5. **No stock photos.** | `<!-- REPLACE: founder portrait ... -->` |
+| `index.html` hero | Your own bench or build photo, 4:3 | placeholder stock photo, see below |
+| `about.html` portraits | Founder at the bench, 4:5. **No stock photos.** | `<!-- REPLACE: founder portrait ... -->` |
+| Placeholder stock photos (`assets/photos/*.jpg`) on home, craftsmanship, about and custom shop | Your own shop photos, same crops | `<!-- REPLACE: placeholder stock photo (Unsplash) ... -->`; sources and licence in [`docs/CREDITS.md`](docs/CREDITS.md) |
 | `about.html` workshop | Bench, kiln, resting room | `<!-- REPLACE: workshop photographs -->` |
 | `craftsmanship.html` | Board selection photo; workshop film | `<!-- REPLACE: workshop photograph ... -->` |
 | `model-*.html` "Hear it" | One video and two audio clips per model | `<!-- REPLACE: video embed ... -->` / `audio embed` |
@@ -100,7 +101,8 @@ thanks.html               No-JS form fallback (noindex)
 404.html                  Uses root-absolute paths so it works at any depth
 blog/index.html + 6 posts Journal
 css/style.css  js/main.js
-assets/                   renders (svg + jpg), logo, wordmark, monogram, favicons, og-image, diagrams
+assets/                   renders (svg + jpg), logo (ink + light variants), wordmark, monogram, favicons, og-image, diagrams
+assets/photos/            placeholder stock photos (docs/CREDITS.md)
 favicon.ico  sitemap.xml  robots.txt
 docs/AUDIT.md  docs/BRAND.md
 ```
