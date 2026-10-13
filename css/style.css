@@ -116,7 +116,7 @@ header.site{
   padding:16px 0;transition:background-color .35s,border-color .35s,padding .35s var(--ease),backdrop-filter .35s;
 }
 header.site.scrolled{
-  background:rgba(11,10,9,.72);border-bottom-color:rgba(239,233,223,.08);padding:8px 0;
+  background:rgba(11,10,9,.9);border-bottom-color:rgba(239,233,223,.08);padding:8px 0;
   -webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter);}
