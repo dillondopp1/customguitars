@@ -394,7 +394,11 @@ img[src*="photos/"]{filter:sepia(.22) saturate(.78) brightness(.74) contrast(1.0
 /* Founders' Run plate grid */
 .run-plate{display:flex!important;flex-direction:column;justify-content:center;gap:clamp(10px,1.4vw,18px);padding:clamp(14px,3vw,40px);
   background:radial-gradient(70% 70% at 50% 40%,rgba(224,100,43,.16),transparent 70%),linear-gradient(160deg,#17130f,#090807);}
-.run-plate .cap{font-family:var(--mono);font-size:.8125rem;color:var(--muted);display:flex;justify-content:space-between;gap:12px;}
+.run-plate .cap{font-family:var(--mono);font-size:.8125rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;}
+/* the stacked (mobile / no-JS) plate is itself a .story-visual, so undo the fill-the-frame rule for its children */
+.story-visual.run-plate{aspect-ratio:auto;}
+.story-visual.run-plate > *{position:relative;inset:auto;width:auto;height:auto;}
+.story-visual.run-plate .run-grid{grid-template-rows:repeat(5,minmax(40px,auto)) auto;}
 .run-plate .cap b{color:var(--text);font-weight:500;}
 .run-grid{flex:1;min-height:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(5,minmax(0,1fr)) auto;gap:clamp(4px,.7vw,9px);}
 .run-grid span{display:grid;place-items:center;border:1px solid rgba(224,100,43,.45);border-radius:2px;font-family:var(--mono);font-size:clamp(.75rem,1vw,.9rem);color:var(--text);
