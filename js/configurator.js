@@ -37,7 +37,7 @@
     basalt: {
       name: 'The Basalt', shape: 'Single-cut', price: 5900,
       strings: [6],
-      bodies: ['Mahogany back, hand-carved maple top'],
+      bodies: ['Mahogany back, carved maple top'],
       boards: ['ebony'],
       pickups: ['Two humbuckers, open', 'Two humbuckers, covered'],
       bridges: ['Tune-o-matic-style bridge, stop tailpiece'],
