@@ -74,7 +74,7 @@ No payments are integrated. The copy already describes the flow: **written spec 
 
 ### 8. Business facts to confirm
 
-These are stated on the site; change them everywhere if they're wrong: 12 build slots per quarter; Founders' Run of 25 (F01–F25, brass serial plate, free setups for life); 12–16 week build time; 60-day neck rest; 37-point setup; base prices and upgrade tiers (`custom-shop.html#pricing`); lifetime warranty for the original owner plus 5 years for registered second owners.
+These are stated on the site; change them everywhere if they're wrong: 12 build slots per quarter; every instrument numbered in one sequence from No. 1 (stamped in the heel); Founders' Run = Nos. 1–25 (brass number plate, free setups for life); built to order only, no stock; no ivory or protected-species materials (stated on the terms page only); 12–16 week build time; 60-day neck rest; 37-point setup; base prices and upgrade tiers (`custom-shop.html#pricing`); lifetime warranty for the original owner plus 5 years for registered second owners.
 
 ---
 

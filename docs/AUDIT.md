@@ -80,7 +80,7 @@ The hero now reads "Hand-built electric guitars · 12 build slots a quarter" / *
 ## 9. Scarcity and capture (High): Resolved
 
 - **12 build slots per quarter**, stated consistently, with slots opening to the waitlist first. No fake "only 2 left" counters.
-- **Founders' Run:** the first 25 instruments are serialised F01–F25, with a brass serial plate and lifetime free setups. The series closes permanently.
+- **Founders' Run:** Nos. 1–25 in the single build sequence (every instrument is numbered from No. 1), with a brass number plate and lifetime free setups. The run closes permanently after No. 25.
 - **Waitlist capture:** a footer form on every page (Netlify form `waitlist`), plus an opt-in checkbox on the build request. Wired exactly like the other forms.
 
 ## 10. Pricing (High): Resolved

@@ -90,10 +90,14 @@ Also decided: a fixed written quote before any payment, a target ship month on e
 ## 6. Scarcity model
 
 - **12 build slots per quarter** (about one guitar a week from one bench, allowing for Quench batches, finishing cure times and setup). Slots open to the waitlist first.
-- **Founders' Run:** the first **25** instruments, any model, numbered **F01–F25**, with a brass serial plate on the heel and free setups for life. It closes permanently after F25.
+- **Owner decisions (Oct 2026):**
+  - **Every guitar is built to order.** There are no stock builds, ever.
+  - **Every instrument is numbered in one sequence across all models, starting at No. 1.** Numbers are never reused.
+  - **Founders' Run:** Nos. 1–25 (any model) get a brass number plate on the heel and free setups for life. It closes permanently after No. 25.
+  - **Materials:** no ivory or protected-species materials, ever. This is stated once on the terms page, not in product or marketing copy.
 - **No fake urgency:** no countdowns or "only 2 left" badges. Capacity is stated as a fact and will be updated honestly if a second bench opens.
 
-**Why:** The scarcity is real (one builder), so it's credible. The Founders' Run turns "we're new" into a reason to buy now and creates collectible serials for early customers.
+**Why:** The scarcity is real (one builder), so it's credible. The Founders' Run turns "we're new" into a reason to buy now and creates collectible low numbers for early customers. A single sequence makes every number meaningful: No. 7 tells a future buyer exactly how early it was.
 
 ## 7. Founder persona (placeholder)
 

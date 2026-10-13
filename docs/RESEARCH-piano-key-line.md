@@ -10,7 +10,7 @@ Prepared October 2026 for Obsidian Guitars. **Not legal advice.** Get the legal 
 
 **Go, as a limited, numbered run, but with no ivory, a resin top over a wood body, and pre-sales first.**
 
-1. **Never sell guitars containing elephant ivory.** A guitar built in 2026 cannot use either federal exception (de minimis or antique). It fails every state musical-instrument exemption we found that is tied to the instrument's build date, and it effectively cannot be sold into the EU or UK. Remove the ivory key tops and keep them out of the product. The legal section below has the details.
+1. **Never sell guitars containing elephant ivory (owner has confirmed: no ivory, ever).** A guitar built in 2026 cannot use either federal exception (de minimis or antique). It fails every state musical-instrument exemption we found that is tied to the instrument's build date, and it effectively cannot be sold into the EU or UK. Remove the ivory key tops and keep them out of the product. The legal section below has the details.
 2. **Build a keys-in-resin top over a chambered wood body. Do not build solid epoxy bodies.** A solid epoxy body puts the guitar at about 13–14 lb. A 6–10 mm keys-in-resin top over chambered alder or mahogany keeps it around 7.5–8.5 lb. [E]
 3. **Launch it as a numbered limited run, not a permanent model.** In this market, guitars sold on their materials and story sell when they are scarce and have provenance. PRS's Reclaimed run sold out; Ormsby's order windows sell out. [S] Standing novelty models have no proven resale.
 4. **Prove demand first.** Pre-sell 3–5 numbered builds with deposits before committing workshop capacity. Piano-key guitars have no public resale record, and the one existing catalog model shows no reviews. [S]
@@ -124,7 +124,7 @@ The busiest part of the band is $3.5k–6k. [E] Obsidian's base pricing competes
   - photos of the piano's cast-iron plate and maker's decal
   - teardown photos
   - the previous owner's story, where available
-- **Paperwork:** ship a signed certificate and a materials statement. The statement must say "contains no ivory" and identify the species of the sharps.
+- **Paperwork:** ship a signed certificate and a materials record identifying the donor piano and the wood species used, including the sharps.
 - **Run naming:** name the run after the piano itself, e.g. "Reliquary No. 1 — 1912 upright, serial ####."
 - **Trademarks:**
   - A factual line such as "keys from a 1911 Steinway upright, serial ####" is probably acceptable as a plain factual reference to the brand. [E]
@@ -183,7 +183,7 @@ The busiest part of the band is $3.5k–6k. [E] Obsidian's base pricing competes
    - Leave it out of castings.
    - Don't ship scrap: raw and scrap celluloid are hazmat (UN2000/UN2002).
    - Sand it only with fire precautions in place.
-6. **State it clearly:** put "contains no ivory or endangered species materials" on the certificate, the product page and the export paperwork.
+6. **Materials policy (owner decision):** the no-ivory / no-protected-species policy is stated once, discreetly, on the terms page, not on certificates or product pages. Keep the internal teardown log, and give an accurate materials description on any export or customs paperwork if asked.
 7. **Get counsel to review** the materials statement, piano trademark references and export plan before launch.
 
 ---
