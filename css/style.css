@@ -810,3 +810,4 @@ main > section.page-top:first-child{padding-top:calc(var(--header-h) + clamp(56p
 .narrow > h3{margin-top:1.4em;}
 .narrow > ul,.narrow > ol{color:var(--body);padding-left:1.2em;}
 .narrow li::marker{color:var(--ember);}
+@media(max-width:700px){.photo-hero .crumb{top:calc(var(--header-h) + 22px);}}
