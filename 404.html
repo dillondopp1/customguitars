@@ -3,29 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Not Found — Obsidian Guitars</title>
+<title>Page Not Found | Obsidian Guitars</title>
+<meta name="description" content="The page you were looking for could not be found.">
 <meta name="robots" content="noindex">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:site_name" content="Obsidian Guitars">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Page Not Found | Obsidian Guitars">
+<meta property="og:description" content="The page you were looking for could not be found.">
+<meta property="og:url" content="https://www.obsidianguitars.com/404.html">
+<meta property="og:image" content="https://www.obsidianguitars.com/assets/og-image.png">
+<meta property="og:image:alt" content="Obsidian Guitars">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Page Not Found | Obsidian Guitars">
+<meta name="twitter:description" content="The page you were looking for could not be found.">
+<meta name="twitter:image" content="https://www.obsidianguitars.com/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site">
-  <nav class="nav">
-    <a href="index.html" class="logo">OBSIDIAN<span>.</span></a>
-    <div></div>
+  <nav class="nav" aria-label="Primary">
+    <a href="/index.html" class="logo" aria-label="Obsidian Guitars, home"><img src="/assets/logo-mark.svg" alt="" width="30" height="30"><img class="wordmark" src="/assets/wordmark.svg" alt="" width="122" height="17"></a>
+    <ul class="navlinks" id="primary-nav">
+      <li><a href="/models.html">Models</a></li><li><a href="/craftsmanship.html">Craftsmanship</a></li><li><a href="/custom-shop.html">Custom Shop</a></li><li><a href="/gallery.html">Gallery</a></li><li><a href="/about.html">About</a></li><li><a href="/blog/index.html">Journal</a></li><li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <div class="navcta">
+      <a href="/custom-shop.html" class="btn solid">Reserve a Slot</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span class="bars" aria-hidden="true"></span></button>
+    </div>
   </nav>
 </header>
+<main id="main">
+
 <section class="hero" style="min-height:70vh;">
   <div class="wrap center">
     <span class="eyebrow">404</span>
-    <h1>This page doesn't exist &mdash; yet.</h1>
-    <p class="lead" style="margin:0 auto 30px;">The page you're looking for may have moved. Try the links below.</p>
+    <h1>This page doesn&rsquo;t exist.</h1>
+    <p class="lead" style="margin:0 auto 30px;">It may have moved, or the link was mistyped. These will get you back on track.</p>
     <div class="hero-actions" style="justify-content:center;">
-      <a href="index.html" class="btn solid">Back To Home</a>
-      <a href="models.html" class="btn">View Models</a>
+      <a href="/index.html" class="btn solid">Home</a>
+      <a href="/models.html" class="btn">Models</a>
+      <a href="/custom-shop.html" class="btn">Custom Shop</a>
     </div>
   </div>
 </section>
-<script src="js/main.js"></script>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="waitlist" id="waitlist">
+      <div>
+        <span class="eyebrow">Build-slot waitlist</span>
+        <h2>12 slots a quarter. The waitlist hears first.</h2>
+        <p>One email when a quarter&rsquo;s build slots open, plus the occasional note from the bench. No discounts, no noise.</p>
+      </div>
+      <div class="form-wrap">
+        <form name="waitlist" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-obsidian-form class="inline-form" aria-label="Join the build-slot waitlist">
+<input type="hidden" name="form-name" value="waitlist">
+<p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+          <label for="wl-email-0" class="visually-hidden">Email address</label>
+          <input type="email" id="wl-email-0" name="email" placeholder="Email address" autocomplete="email" required>
+          <input type="hidden" name="source" value="footer">
+          <button type="submit" class="btn solid">Join the waitlist</button>
+        </form>
+        <div class="form-success" hidden tabindex="-1" role="status"><h3>You&rsquo;re on the list.</h3><p>We&rsquo;ll email you once, when the next quarter&rsquo;s slots open.</p></div>
+<div class="form-error" hidden tabindex="-1" role="alert"><h3>That didn&rsquo;t go through.</h3><p>Nothing was sent. Please check your connection and try again. If it keeps failing, use the <a href="/contact.html">contact page</a> and tell us; we would rather know.</p></div>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/logo.svg" alt="Obsidian Guitars" width="220" height="28">
+        <p style="max-width:300px;">Hand-built electric guitars. One builder per instrument, 12 build slots a quarter, every neck Quench-cured.</p>
+      </div>
+      <div>
+        <h2>Instruments</h2>
+        <ul><li><a href="/models.html">All models</a></li><li><a href="/model-tephra.html">The Tephra</a></li><li><a href="/model-rhyolite.html">The Rhyolite</a></li><li><a href="/model-basalt.html">The Basalt</a></li><li><a href="/model-scoria.html">The Scoria</a></li><li><a href="/custom-shop.html">Custom Shop &amp; pricing</a></li></ul>
+      </div>
+      <div>
+        <h2>Workshop</h2>
+        <ul>
+          <li><a href="/craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="/about.html">About &amp; the builders</a></li>
+          <li><a href="/artists.html">Artist program</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/blog/index.html">Journal</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="/warranty.html">Warranty</a></li>
+          <li><a href="/privacy.html">Privacy policy</a></li>
+          <li><a href="/terms.html">Terms of sale</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span data-year>2026</span> Obsidian Instruments Co. All rights reserved.</div>
+      <div>Built slow, on purpose.</div>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
 </body>
 </html>
