@@ -18,6 +18,7 @@ Every business and brand decision made for launch, with the reasoning. The owner
 
 | Shape | Old name | New name | Why the name fits |
 |---|---|---|---|
+| T-style | (added Oct 2026) | **Andesite** | The everyday, load-bearing rock that builds mountain ranges: simple, direct, honest |
 | Superstrat | Apex | **Tephra** | Fine volcanic ash thrown highest: fast, light, precise |
 | Offset (chambered) | Solace | **Rhyolite** | The lava obsidian forms from; same chemistry, cooled slower and full of air (chambered) |
 | Single-cut | Vantage | **Basalt** | Dense rock that cools into columns: weight, sustain |
@@ -25,7 +26,9 @@ Every business and brand decision made for launch, with the reasoning. The owner
 
 **Why:** "Eclipse" (ESP) and "Vantage" (an established brand) were conflicts. A quick check found that "Apex" is Ibanez's Munky signature line, so it went too. "Solace" was free but sat close to Solar Guitars and didn't fit a system. One coherent family (the rocks obsidian belongs to) makes the lineup feel designed, gives each name a built-in story, and is unlikely to collide. Web searches found no existing guitar models with these names; "Caldera" was rejected because JET Guitars uses it. **A formal trademark search is still the owner's job before launch.**
 
-**Slugs:** `tephra`, `rhyolite`, `basalt`, `scoria`. Lineup order is by price.
+**Slugs:** `andesite`, `tephra`, `rhyolite`, `basalt`, `scoria`. Lineup order is by price.
+
+**Andesite (added Oct 2026, owner decision):** a T-style was the biggest gap in the lineup: it's one of the most popular boutique shapes, and the existing piano-key guitar on the market is T-style. Its outline is drawn as our own; don't copy any manufacturer's exact body or headstock. Use industry terms (S-style, T-style, single-cut) on the site, never "Strat", "Tele" or "Les Paul", which are Fender and Gibson trademarks.
 
 ## 3. Signature differentiator: the Quench neck
 
@@ -48,12 +51,13 @@ Every business and brand decision made for launch, with the reasoning. The owner
 
 | Model | Base price |
 |---|---|
+| Andesite | $4,600 |
 | Tephra | $4,800 |
 | Rhyolite | $5,200 |
 | Basalt | $5,900 |
 | Scoria | $6,400 |
 
-**Why:** The old $4,200–$5,100 range sat at the bottom of boutique pricing and undercut the "worth thousands" goal. The new base prices put Obsidian alongside established independent builders and big-brand custom shops, with typical finished builds at $5,500–$8,000. The order reflects real labour: bolt-on (Tephra, Rhyolite with chambering) < carved top + set neck + binding (Basalt) < headless hardware + multiscale + chambering (Scoria).
+**Why:** The old $4,200–$5,100 range sat at the bottom of boutique pricing and undercut the "worth thousands" goal. The new base prices put Obsidian alongside established independent builders and big-brand custom shops, with typical finished builds at $5,500–$8,000. The order reflects real labour: slab-body bolt-on (Andesite, the entry point) < contoured bolt-on (Tephra, Rhyolite with chambering) < carved top + set neck + binding (Basalt) < headless hardware + multiscale + chambering (Scoria).
 
 **Every base price includes:** Quench neck, stainless frets, locking tuners, bone or graphite nut, 37-point setup, hardshell case, Provenance File.
 
@@ -150,7 +154,7 @@ Also decided: a fixed written quote before any payment, a target ship month on e
 **Doesn't sound like:**
 - "Experience the ultimate in tone and playability with our revolutionary neck technology!"
 
-**Formatting:** sentence case headings, uppercase eyebrows, prices always as "From $X,XXX", and the four model names always written "the Tephra", "the Basalt" and so on.
+**Formatting:** sentence case headings, uppercase eyebrows, prices always as "From $X,XXX", and the five model names always written "the Andesite", "the Tephra", "the Basalt" and so on.
 
 ## 12. Things we explicitly decided not to do
 

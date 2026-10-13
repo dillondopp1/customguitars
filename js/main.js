@@ -21,7 +21,7 @@ var OBSIDIAN_FORMS = {
 (function () {
   'use strict';
 
-  var MODEL_SLUGS = ['tephra', 'basalt', 'scoria', 'rhyolite'];
+  var MODEL_SLUGS = ['andesite', 'tephra', 'basalt', 'scoria', 'rhyolite'];
 
   function formspreeConfigured() {
     return OBSIDIAN_FORMS.formspreeEndpoint &&

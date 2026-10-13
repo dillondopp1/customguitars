@@ -4,8 +4,18 @@
 
   // Prices must match the #pricing table in custom-shop.html.
   var MODELS = {
+    andesite: {
+      name: 'The Andesite', shape: 'T-style', price: 4600,
+      strings: [6],
+      bodies: ['Swamp ash', 'Alder'],
+      boards: ['maple', 'ebony'],
+      pickups: ['Two single-coils', 'Bridge single-coil, neck humbucker'],
+      bridges: ['Three brass saddles, through-body', 'Six steel saddles, through-body'],
+      multiscale: 'none',
+      defaults: { finish: 'natural', hardware: 'nickel', board: 'maple' }
+    },
     tephra: {
-      name: 'The Tephra', shape: 'Superstrat', price: 4800,
+      name: 'The Tephra', shape: 'S-style superstrat', price: 4800,
       strings: [6, 7, 8],
       bodies: ['Swamp ash', 'Alder'],
       boards: ['ebony', 'maple'],
@@ -15,7 +25,7 @@
       defaults: { finish: 'teal', hardware: 'nickel', board: 'ebony' }
     },
     rhyolite: {
-      name: 'The Rhyolite', shape: 'Chambered Offset', price: 5200,
+      name: 'The Rhyolite', shape: 'Offset, chambered', price: 5200,
       strings: [6],
       bodies: ['Chambered alder', 'Chambered korina'],
       boards: ['maple', 'ebony'],
@@ -25,7 +35,7 @@
       defaults: { finish: 'cherry', hardware: 'nickel', board: 'maple' }
     },
     basalt: {
-      name: 'The Basalt', shape: 'Single-Cut', price: 5900,
+      name: 'The Basalt', shape: 'Single-cut', price: 5900,
       strings: [6],
       bodies: ['Mahogany back, hand-carved maple top'],
       boards: ['ebony'],
@@ -35,7 +45,7 @@
       defaults: { finish: 'amber', hardware: 'gold', board: 'ebony' }
     },
     scoria: {
-      name: 'The Scoria', shape: 'Headless Multiscale', price: 6400,
+      name: 'The Scoria', shape: 'Headless multiscale', price: 6400,
       strings: [6, 7, 8],
       bodies: ['Chambered swamp ash', 'Chambered korina'],
       boards: ['ebony', 'maple'],
@@ -45,7 +55,7 @@
       defaults: { finish: 'charcoal', hardware: 'black', board: 'ebony' }
     }
   };
-  var MODEL_ORDER = ['tephra', 'rhyolite', 'basalt', 'scoria'];
+  var MODEL_ORDER = ['andesite', 'tephra', 'rhyolite', 'basalt', 'scoria'];
 
   var STRINGS = { 6: 0, 7: 350, 8: 600 };
 
@@ -485,7 +495,7 @@
   /* ---------- hand-off to the request form ---------- */
 
   function budgetIndex(t) {
-    if (t <= 5500) return 0;
+    if (t < 5500) return 0;
     if (t <= 6500) return 1;
     if (t <= 8000) return 2;
     return 3;

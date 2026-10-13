@@ -61,7 +61,7 @@ All product imagery is illustrated SVG renders (`assets/render-*.svg`, rasters i
 
 ### 6. Trademark
 
-Model names (Tephra, Rhyolite, Basalt, Scoria) and "Quench" passed a quick web search for existing guitar models, but that is not legal clearance. Run a proper trademark search (USPTO, plus EUIPO and UKIPO if you sell abroad) for "Obsidian Guitars", the four model names and "Quench" in class 15 (musical instruments) before printing headstocks.
+Model names (Andesite, Tephra, Rhyolite, Basalt, Scoria) and "Quench" passed a quick web search for existing guitar models, but that is not legal clearance. Run a proper trademark search (USPTO, plus EUIPO and UKIPO if you sell abroad) for "Obsidian Guitars", the five model names and "Quench" in class 15 (musical instruments) before printing headstocks.
 
 ### 7. Stripe / checkout hookup points
 
@@ -83,7 +83,8 @@ These are stated on the site; change them everywhere if they're wrong: 12 build 
 ```
 index.html                Home
 models.html               Lineup
-model-tephra.html         Superstrat         (from $4,800)
+model-andesite.html       T-style            (from $4,600)
+model-tephra.html         S-style superstrat (from $4,800)
 model-rhyolite.html       Chambered offset   (from $5,200)
 model-basalt.html         Single-cut         (from $5,900)
 model-scoria.html         Headless multiscale (from $6,400)
