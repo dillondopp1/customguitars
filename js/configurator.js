@@ -3,6 +3,8 @@
   'use strict';
 
   // Prices must match the #pricing table in custom-shop.html.
+  // `price` is the list base price; `founders` is the Founders' Run base price
+  // (instruments Nos. 1-25 only). Upgrades are charged at list either way.
 
   // Mahogany neck on a bolt-on model. PLACEHOLDER: the owner must confirm
   // this against supplier costs before launch (see README, "Business facts to confirm").
@@ -18,7 +20,7 @@
 
   var MODELS = {
     andesite: {
-      name: 'The Andesite', shape: 'T-style', price: 4600,
+      name: 'The Andesite', shape: 'T-style', price: 4600, founders: 3900,
       strings: [6],
       bodies: ['Swamp ash', 'Alder'],
       boards: ['maple', 'ebony'],
@@ -29,7 +31,7 @@
       defaults: { finish: 'natural', hardware: 'nickel', board: 'maple' }
     },
     tephra: {
-      name: 'The Tephra', shape: 'S-style superstrat', price: 4800,
+      name: 'The Tephra', shape: 'S-style superstrat', price: 4800, founders: 4100,
       strings: [6, 7, 8],
       bodies: ['Swamp ash', 'Alder'],
       boards: ['ebony', 'maple'],
@@ -40,7 +42,7 @@
       defaults: { finish: 'teal', hardware: 'nickel', board: 'ebony' }
     },
     rhyolite: {
-      name: 'The Rhyolite', shape: 'Offset, chambered', price: 5200,
+      name: 'The Rhyolite', shape: 'Offset, chambered', price: 5200, founders: 4400,
       strings: [6],
       bodies: ['Chambered alder', 'Chambered korina'],
       boards: ['maple', 'ebony'],
@@ -51,7 +53,7 @@
       defaults: { finish: 'cherry', hardware: 'nickel', board: 'maple' }
     },
     basalt: {
-      name: 'The Basalt', shape: 'Single-cut', price: 5900,
+      name: 'The Basalt', shape: 'Single-cut', price: 5900, founders: 5000,
       strings: [6],
       bodies: ['Mahogany back, carved maple top'],
       boards: ['ebony'],
@@ -62,7 +64,7 @@
       defaults: { finish: 'amber', hardware: 'gold', board: 'ebony' }
     },
     scoria: {
-      name: 'The Scoria', shape: 'Headless multiscale', price: 6400,
+      name: 'The Scoria', shape: 'Headless multiscale', price: 6400, founders: 5400,
       strings: [6, 7, 8],
       bodies: ['Chambered swamp ash', 'Chambered korina'],
       boards: ['ebony', 'maple'],
@@ -253,6 +255,11 @@
   }
   function total() {
     return lineItems().reduce(function (sum, it) { return sum + it.price; }, 0);
+  }
+  // Founders' Run price: the same build with the Founders' base price instead of list.
+  function foundersTotal() {
+    var m = MODELS[state.model];
+    return total() - (m.price - m.founders);
   }
 
   function specLines() {
@@ -490,6 +497,11 @@
     var t = total();
     root.querySelector('#cfg-total').textContent = money(t);
     root.querySelector('#cfg-deposit').textContent = money(Math.round(t * DEPOSIT_RATE));
+    var ft = foundersTotal();
+    var fEl = root.querySelector('#cfg-founders-total');
+    if (fEl) fEl.textContent = money(ft);
+    var fDep = root.querySelector('#cfg-founders-deposit');
+    if (fDep) fDep.textContent = money(Math.round(ft * DEPOSIT_RATE));
     root.querySelector('#cfg-badge-total').textContent = money(t);
     var note = root.querySelector('#cfg-figure-note');
     if (note) note.hidden = !(byId(FINISHES, state.finish).opaque && state.grade !== 'select');
@@ -546,6 +558,7 @@
     var t = total();
     var spec = specLines();
     var text = 'Configured build, estimated ' + money(t) + '\n' +
+      'Founders\' Run price (Nos. 1\u201325): ' + money(foundersTotal()) + '\n' +
       spec.map(function (l) { return l[0] + ': ' + l[1]; }).join('\n') + '\n' +
       'Price lines: ' + lineItems().map(function (it) { return it.label + ' ' + money(it.price); }).join('; ') + '\n' +
       'Link: ' + shareUrl();
@@ -563,7 +576,7 @@
       box.querySelector('[data-cfg-total]').textContent = money(t);
       box.querySelector('ul').innerHTML = spec.map(function (l) {
         return '<li><span>' + esc(l[0]) + '</span><span>' + esc(l[1]) + '</span></li>';
-      }).join('');
+      }).join('') + '<li><span>Founders&rsquo; Run price (Nos. 1&ndash;25)</span><span>' + money(foundersTotal()) + '</span></li>';
       box.hidden = false;
     }
     var target = document.getElementById('request');
