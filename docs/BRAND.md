@@ -8,7 +8,7 @@ Every business and brand decision made for launch, with the reasoning. The owner
 
 **Decision:** Obsidian is a small, accountable workshop that builds a limited number of electric guitars to order, and proves its quality with process and paperwork rather than adjectives.
 
-**One-line POV:** *Built slow, on purpose.*
+**One-line POV:** *Electric guitars, built one at a time by the person who signs for them.*
 
 **Why:** A buyer who sees an Obsidian in the wild and looks it up has to believe it's worth several thousand dollars, from a brand with no history, no reviews and no famous players. The only honest levers a new brand has are (a) a visible, specific process, (b) a named person accountable for each instrument, (c) documented provenance, and (d) real scarcity. The positioning is built around those four. Brands in this space (for example the minimal, visuals-first approach the owner admired) win on restraint and specificity. We take the same posture without borrowing any of their language or marks.
 
@@ -120,10 +120,15 @@ Also decided: a fixed written quote before any payment, a target ship month on e
 
 ## 9. Visual direction
 
-- **Palette:** near-black (#0a0a0b), charcoal, bone (#f2efe9), brass (#c9a35c), with ember (#c35b4f) for error and seal accents only.
-- **Type:** Playfair Display (headlines) and Inter (body), already loaded from Google Fonts.
-- **Logo:** a faceted, knapped-stone "O" monogram (an obsidian shard with fracture facets) and an angular, chamfered wordmark drawn as paths. The shard shape repeats as the fretboard inlay, the Rhyolite sound port and the headstock mark.
-- **Imagery:** studio renders on a dark background with a warm rim light until real photography exists. Real photography should match: dark seamless backdrop, a single warm key light, macro shots of figure, frets and the heel serial.
+**Revised Oct 2026 ("de-AI" pass).** The original near-black, brass and Playfair look read as a generic luxury template. The site now looks like a small workshop's paperwork.
+
+- **Palette:** warm paper (`#f3eee5`), surface (`#fbf8f2`), ink (`#1c1a17`), secondary text (`#5b554b`), rules (`#d9d0c1`) and one accent, rust (`#9a4a2b`, hover `#7a3820`) for links, primary buttons and focus. Accent passes WCAG AA on paper (5.4:1) and surface (5.9:1); white on rust is 6.2:1. Guitar renders and diagrams keep their dark studio backgrounds and sit on dark mats (`#15130f`), like photographs. The footer is dark.
+- **Type:** Newsreader (headings, weights 400–600, sentence case, never all caps), IBM Plex Sans (body), IBM Plex Mono (prices, specs, measurements, dates, instrument numbers and small labels, like a build sheet). All from Google Fonts.
+- **Labels:** no tracked-out uppercase eyebrows. A small Plex Mono label is used only where it carries information: a model's shape type, a post's category and reading time.
+- **Headlines:** plain, specific sentences a luthier would say. No two-beat slogans, triads or "not X but Y".
+- **Layout:** sections vary: photo splits, full-bleed photos, ruled lists, a mono "workshop sheet". Model cards stay cards; other grids are ruled lists. Buttons are sentence case with a 3px radius.
+- **Logo:** a faceted, knapped-stone "O" monogram and an angular wordmark drawn as paths; `logo-mark-ink.svg`/`wordmark-ink.svg` on light, `logo-light.svg` on dark. The shard shape repeats as the fretboard inlay, the Rhyolite sound port and the headstock mark.
+- **Imagery:** studio renders on dark mats until real photography exists. Workshop atmosphere uses placeholder Unsplash photos (`docs/CREDITS.md`), never presented as our guitars, customers, shop or founder.
 
 ## 10. Site structure decisions
 
@@ -154,7 +159,7 @@ Also decided: a fixed written quote before any payment, a target ship month on e
 **Doesn't sound like:**
 - "Experience the ultimate in tone and playability with our revolutionary neck technology!"
 
-**Formatting:** sentence case headings, uppercase eyebrows, prices always as "From $X,XXX", and the five model names always written "the Andesite", "the Tephra", "the Basalt" and so on.
+**Formatting:** sentence case headings, no uppercase eyebrows, prices always as "From $X,XXX" in Plex Mono, and the five model names always written "the Andesite", "the Tephra", "the Basalt" and so on.
 
 ## 12. Things we explicitly decided not to do
 
