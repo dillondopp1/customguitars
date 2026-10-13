@@ -74,7 +74,7 @@ No payments are integrated. The copy already describes the flow: **written spec 
 
 ### 8. Business facts to confirm
 
-These are stated on the site; change them everywhere if they're wrong: 12 build slots per quarter; every instrument numbered in one sequence from No. 1 (stamped in the heel); Founders' Run = Nos. 1–25 (brass number plate, free setups for life); built to order only, no stock; no ivory or protected-species materials (stated on the terms page only); 12–16 week build time; 60-day neck rest; 37-point setup; base prices and upgrade tiers (`custom-shop.html#pricing`); lifetime warranty for the original owner plus 5 years for registered second owners.
+These are stated on the site; change them everywhere if they're wrong: 12 build slots per quarter; every instrument numbered in one sequence from No. 1 (stamped in the heel); Founders' Run = Nos. 1–25 (brass number plate, free setups for life); built to order only, no stock; no ivory or protected-species materials (stated on the terms page only); 12–16 week build time; 60-day neck rest; 37-point setup; base prices and upgrade tiers (`custom-shop.html#pricing` **and** the price constants at the top of `js/configurator.js`, which must match); lifetime warranty for the original owner plus 5 years for registered second owners.
 
 ---
 
@@ -87,7 +87,7 @@ model-tephra.html         Superstrat         (from $4,800)
 model-rhyolite.html       Chambered offset   (from $5,200)
 model-basalt.html         Single-cut         (from $5,900)
 model-scoria.html         Headless multiscale (from $6,400)
-custom-shop.html          Build request form, process, pricing tiers, deposit terms (#pricing, #deposit)
+custom-shop.html          Configurator (#configure), build request form (#request), process, pricing tiers, deposit terms (#pricing, #deposit)
 craftsmanship.html        Build process, Quench neck (#quench), provenance / COA, build journal
 about.html                Founder story and the builders
 artists.html              Artist program and application form

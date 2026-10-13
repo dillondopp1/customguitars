@@ -66,8 +66,37 @@
     <div class="section-head">
       <span class="eyebrow">Custom Shop</span>
       <h1>Spec the guitar only you will own.</h1>
-      <p class="lead">Tell us what you play and what you want to feel. A luthier replies within two business days with questions, then a written spec and a fixed quote. Nothing is charged until you approve it.</p>
-      <p>We build 12 guitars a quarter. Typical build time is 12&ndash;16 weeks from deposit to shipping.</p>
+      <p class="lead">Design your build below and watch it come together, then send it to us. A luthier replies within two business days with questions, then a written spec and a fixed quote. Nothing is charged until you approve it.</p>
+      <p>We build 12 guitars a quarter. Typical build time is 12&ndash;16 weeks from deposit to shipping. Already know what you want? <a href="#request">Skip to the request form</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="configure" class="cfg" aria-labelledby="cfg-title" hidden>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Configurator</span>
+      <h2 id="cfg-title">Design your build.</h2>
+      <p>Work through the options and the guitar and estimate update as you go. Anything not listed here, from custom inlay artwork to a neck shape copied from your favorite guitar, we settle on the spec call.</p>
+    </div>
+    <div class="cfg-grid">
+      <div class="cfg-stage">
+        <div class="cfg-sticky"><div class="cfg-preview" id="cfg-preview"></div><div class="cfg-badge" aria-hidden="true">Est. <span id="cfg-badge-total"></span></div></div>
+        <p class="cfg-caption"><span id="cfg-model-name">The Tephra</span> in <span id="cfg-finish-name">Glacier Teal Burst</span>. Illustration: real wood figure varies, and that&rsquo;s the point.</p>
+        <div class="cfg-summary">
+          <div class="cfg-total-row" aria-live="polite" aria-atomic="true">
+            <span>Estimated total</span>
+            <strong id="cfg-total">$0</strong>
+          </div>
+          <ul class="cfg-lines" id="cfg-lines"></ul>
+          <p class="cfg-note">30% deposit after you approve your fixed quote: <span id="cfg-deposit">$0</span>. Shipping and duties are quoted separately.</p>
+          <div class="cfg-actions">
+            <button type="button" class="btn solid" id="cfg-send">Request this build</button>
+            <button type="button" class="btn" id="cfg-copy">Copy link to this build</button>
+          </div>
+        </div>
+      </div>
+      <form class="cfg-options" id="cfg-options" aria-label="Build options" onsubmit="return false"></form>
     </div>
   </div>
 </section>
@@ -79,7 +108,12 @@
       <form name="custom-build" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-obsidian-form class="" aria-label="Custom build request">
 <input type="hidden" name="form-name" value="custom-build">
 <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-
+<input type="hidden" name="configuration" value="">
+        <div class="cfg-sent" id="cfg-form-summary" hidden>
+          <div class="cfg-total-row"><span>Your configured build</span><strong data-cfg-total></strong></div>
+          <ul></ul>
+          <button type="button" class="text-btn" id="cfg-edit">Edit in the configurator</button>
+        </div>
         <div class="form-grid">
           <div class="field"><label for="name">Full name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
@@ -88,7 +122,7 @@
           <div class="field"><label for="model">Base model</label>
             <select id="model" name="model"><option value="tephra">The Tephra: Superstrat, from $4,800</option><option value="rhyolite">The Rhyolite: Chambered Offset, from $5,200</option><option value="basalt">The Basalt: Single-Cut, from $5,900</option><option value="scoria">The Scoria: Headless Multiscale, from $6,400</option><option value="unsure">Not sure yet. Help me choose</option></select></div>
           <div class="field"><label for="strings">Strings</label>
-            <select id="strings" name="strings"><option>6-string</option><option>7-string</option><option>8-string (Tephra or Scoria)</option></select></div>
+            <select id="strings" name="strings"><option>6-string</option><option>7-string (Tephra or Scoria)</option><option>8-string (Tephra or Scoria)</option></select></div>
           <div class="field"><label for="grade">Wood grade</label>
             <select id="grade" name="wood_grade"><option>Select (included)</option><option>Master: figured top</option><option>Reserve: single board chosen on video</option><option>Advise me</option></select></div>
           <div class="field"><label for="budget">All-in budget</label>
@@ -208,5 +242,6 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/configurator.js"></script>
 </body>
 </html>
