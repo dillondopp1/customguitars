@@ -3,6 +3,19 @@
   'use strict';
 
   // Prices must match the #pricing table in custom-shop.html.
+
+  // Mahogany neck on a bolt-on model. PLACEHOLDER: the owner must confirm
+  // this against supplier costs before launch (see README, "Business facts to confirm").
+  var NECK_MAHOGANY_PRICE = 150;
+
+  // Neck woods. The first entry for each model is its standard (default) neck.
+  var NECKS = {
+    maple: { name: 'Roasted maple' },
+    mahogany: { name: 'Mahogany' }
+  };
+  var BOLT_ON_NECKS = [{ id: 'maple', price: 0 }, { id: 'mahogany', price: NECK_MAHOGANY_PRICE }];
+  var SET_NECKS = [{ id: 'mahogany', price: 0 }, { id: 'maple', price: 0 }];
+
   var MODELS = {
     andesite: {
       name: 'The Andesite', shape: 'T-style', price: 4600,
@@ -11,6 +24,7 @@
       boards: ['maple', 'ebony'],
       pickups: ['Two single-coils', 'Bridge single-coil, neck humbucker'],
       bridges: ['Three brass saddles, through-body', 'Six steel saddles, through-body'],
+      necks: BOLT_ON_NECKS, joint: 'bolt-on',
       multiscale: 'none',
       defaults: { finish: 'natural', hardware: 'nickel', board: 'maple' }
     },
@@ -21,6 +35,7 @@
       boards: ['ebony', 'maple'],
       pickups: ['Humbucker / single / single, coil split'],
       bridges: ['Two-point tremolo', 'Hardtail'],
+      necks: BOLT_ON_NECKS, joint: 'bolt-on',
       multiscale: 'option',
       defaults: { finish: 'teal', hardware: 'nickel', board: 'ebony' }
     },
@@ -31,6 +46,7 @@
       boards: ['maple', 'ebony'],
       pickups: ['Two P-90s', 'Two humbuckers', 'Three single-coils'],
       bridges: ['Hardtail', 'Vintage-style vibrato'],
+      necks: BOLT_ON_NECKS, joint: 'bolt-on',
       multiscale: 'none',
       defaults: { finish: 'cherry', hardware: 'nickel', board: 'maple' }
     },
@@ -41,6 +57,7 @@
       boards: ['ebony'],
       pickups: ['Two humbuckers, open', 'Two humbuckers, covered'],
       bridges: ['Tune-o-matic-style bridge, stop tailpiece'],
+      necks: SET_NECKS, joint: 'set',
       multiscale: 'none',
       defaults: { finish: 'amber', hardware: 'gold', board: 'ebony' }
     },
@@ -51,6 +68,7 @@
       boards: ['ebony', 'maple'],
       pickups: ['Two humbuckers, coil split'],
       bridges: ['Headless bridge'],
+      necks: BOLT_ON_NECKS, joint: 'bolt-on',
       multiscale: 'standard',
       defaults: { finish: 'charcoal', hardware: 'black', board: 'ebony' }
     }
@@ -113,6 +131,10 @@
     for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
     return null;
   }
+  function neckOption(m, id) {
+    for (var i = 0; i < m.necks.length; i++) if (m.necks[i].id === id) return m.necks[i];
+    return null;
+  }
   function money(n) { return '$' + n.toLocaleString('en-US'); }
   function el(tag, attrs, html) {
     var e = document.createElement(tag);
@@ -144,6 +166,7 @@
       finish: m.defaults.finish,
       coat: 'poly',
       board: m.defaults.board,
+      neck: m.necks[0].id,
       hardware: m.defaults.hardware,
       bridge: 0,
       pickups: 0,
@@ -158,6 +181,7 @@
     if (m.strings.indexOf(s.strings) === -1) s.strings = 6;
     if (!(s.body >= 0 && s.body < m.bodies.length)) s.body = 0;
     if (m.boards.indexOf(s.board) === -1) s.board = m.boards[0];
+    if (!neckOption(m, s.neck)) s.neck = m.necks[0].id;
     if (!(s.bridge >= 0 && s.bridge < m.bridges.length)) s.bridge = 0;
     if (!(s.pickups >= 0 && s.pickups < m.pickups.length)) s.pickups = 0;
     if (!byId(GRADES, s.grade)) s.grade = 'master';
@@ -172,7 +196,7 @@
 
   var PARAMS = {
     model: 'model', strings: 'strings', body: 'body', grade: 'grade', finish: 'finish', coat: 'coat',
-    board: 'board', hardware: 'hw', bridge: 'bridge', pickups: 'pu', inlay: 'inlay',
+    board: 'board', neck: 'neck', hardware: 'hw', bridge: 'bridge', pickups: 'pu', inlay: 'inlay',
     multiscale: 'ms', bridgeUpgrade: 'bu'
   };
   var NUMERIC = { strings: 1, body: 1, bridge: 1, pickups: 1 };
@@ -211,6 +235,8 @@
     var m = MODELS[state.model];
     var items = [{ label: m.name + ' base', price: m.price, base: true }];
     if (STRINGS[state.strings]) items.push({ label: state.strings + '-string', price: STRINGS[state.strings] });
+    var nk = neckOption(m, state.neck);
+    if (nk.price) items.push({ label: NECKS[nk.id].name + ' neck', price: nk.price });
     var g = byId(GRADES, state.grade);
     if (g.price) items.push({ label: g.name + ' wood grade', price: g.price });
     var f = byId(FINISHES, state.finish);
@@ -236,9 +262,10 @@
       ['Model', m.name + ' (' + m.shape + ')'],
       ['Strings', state.strings + '-string'],
       ['Body', m.bodies[state.body]],
+      ['Neck wood', NECKS[state.neck].name + (m.joint === 'set' ? ', glued-in set neck' : ', bolt-on')],
       ['Wood grade', g.name + ': ' + g.desc],
       ['Finish', f.name + (f.opaque ? ' (solid color)' : ' (translucent)') + ', ' + c.name.toLowerCase()],
-      ['Fretboard', BOARDS[state.board].name],
+      ['Fretboard', BOARDS[state.board].name + (state.board === 'maple' && state.neck === 'mahogany' ? ' (separate board on the mahogany neck)' : '')],
       ['Hardware', byId(HARDWARE, state.hardware).name],
       ['Bridge', m.bridges[state.bridge] + (state.bridgeUpgrade ? ', premium upgrade' : '')],
       ['Pickups', m.pickups[state.pickups]],
@@ -389,6 +416,12 @@
     m.bodies.forEach(function (b, i) { g.opts.appendChild(choice('body', i, state.body === i, b, null, 0)); });
     add(g);
 
+    g = group('neck', 'Neck wood', m.joint === 'set' ?
+      'Mahogany is standard on the Basalt&rsquo;s glued-in set neck. Either wood is made to your profile spec.' :
+      'Roasted maple is standard on the ' + esc(m.name.replace('The ', '')) + '. Either wood is made to your profile spec.');
+    m.necks.forEach(function (nk) { g.opts.appendChild(choice('neck', nk.id, state.neck === nk.id, NECKS[nk.id].name, nk === m.necks[0] ? 'Standard' : null, nk.price)); });
+    add(g);
+
     g = group('grade', 'Wood grade');
     GRADES.forEach(function (gr) { g.opts.appendChild(choice('grade', gr.id, state.grade === gr.id, gr.name, gr.desc, gr.price)); });
     g.fs.appendChild(el('p', { class: 'cfg-figure-note', id: 'cfg-figure-note', hidden: true },
@@ -412,6 +445,10 @@
     m.boards.forEach(function (b) {
       g.opts.appendChild(choice('board', b, state.board === b, BOARDS[b].name, null, 0, { swatch: swatchBg(BOARDS[b].stops) }));
     });
+    if (m.boards.indexOf('maple') !== -1) {
+      g.fs.appendChild(el('p', { class: 'cfg-figure-note', id: 'cfg-board-note', hidden: true },
+        'A mahogany neck takes a separate fretboard, so a roasted-maple board is glued on as its own piece.'));
+    }
     add(g);
 
     g = group('hardware', 'Hardware');
@@ -456,6 +493,8 @@
     root.querySelector('#cfg-badge-total').textContent = money(t);
     var note = root.querySelector('#cfg-figure-note');
     if (note) note.hidden = !(byId(FINISHES, state.finish).opaque && state.grade !== 'select');
+    var boardNote = root.querySelector('#cfg-board-note');
+    if (boardNote) boardNote.hidden = !(state.neck === 'mahogany' && state.board === 'maple');
     var list = root.querySelector('#cfg-lines');
     list.innerHTML = items.map(function (it) {
       return '<li><span>' + esc(it.label) + '</span><span>' + (it.base ? money(it.price) : '+' + money(it.price)) + '</span></li>';
@@ -474,7 +513,7 @@
     touched[key] = true;
     if (key === 'model') {
       var next = defaultState(t.value);
-      ['strings', 'body', 'grade', 'finish', 'coat', 'board', 'hardware', 'inlay', 'multiscale', 'bridgeUpgrade'].forEach(function (k) {
+      ['strings', 'body', 'grade', 'finish', 'coat', 'board', 'neck', 'hardware', 'inlay', 'multiscale', 'bridgeUpgrade'].forEach(function (k) {
         if (touched[k]) next[k] = state[k];
       });
       state = normalize(next);
