@@ -20,6 +20,7 @@ Status key: **Resolved** = fixed in this branch. **Owner action** = fixed as far
 | 14 | Tech/SEO | Accessibility gaps | Resolved |
 | 15 | Tech/SEO | Sitemap lastmod, breadcrumbs, Article schema, thin blog | Resolved |
 | 16 | Positioning | Generic voice | Resolved |
+| 17 | Critical | Manufacturing claims no longer true after the October 2026 sourcing decision | Resolved + owner action |
 
 ---
 
@@ -56,7 +57,7 @@ New `about.html` with the founder story (persona **Elias Marr**, a former repair
 
 ## 5. "Est. 2026" (Critical): Resolved
 
-The hero now reads "Hand-built electric guitars · 12 build slots a quarter" / **"Built slow, on purpose."**
+The hero now reads "Hand-built electric guitars · 12 build slots a quarter" / **"Built slow, on purpose."** *(Superseded: later copy passes removed this slogan; capacity is now 6 a quarter.)*
 
 ## 6. Structured data and contact data (Critical): Resolved, owner action needed
 
@@ -67,7 +68,7 @@ The hero now reads "Hand-built electric guitars · 12 build slots a quarter" / *
 
 ## 7. Proof of quality (High): Resolved, owner action needed
 
-- **Provenance File / certificate of authenticity:** serial number stamped in the neck heel, signed build sheet with setup measurements, wood-source record (supplier, board ID, Quench batch), luthier signature. Featured on home, every model page and craftsmanship.
+- **Provenance File / certificate of authenticity:** serial number stamped in the neck heel, signed build sheet with setup measurements, wood-source record (supplier, board ID, Quench batch), luthier signature *(superseded 13 Oct 2026: now species and grade only, and the signature of the person who finished and set up the guitar; see section 17)*. Featured on home, every model page and craftsmanship.
 - **Build journal:** a private photo journal at six stages, archived with the serial for future owners.
 - **Artist program:** `artists.html` explains the program (artist rate plus priority slot in exchange for honest feedback, no paid endorsements) and has an application form. Roster slots read "Artist feature coming soon", with a REPLACE note never to list anyone who hasn't played an Obsidian.
 - **Media slots:** each model page has a video slot and two sound-clip slots, and craftsmanship and about have workshop photo and film slots. All are labelled "coming soon" and marked `<!-- REPLACE -->`.
@@ -75,17 +76,19 @@ The hero now reads "Hand-built electric guitars · 12 build slots a quarter" / *
 
 ## 8. Differentiator (High): Resolved
 
+> **Superseded (13 Oct 2026):** Quench is now a neck standard, not a kiln/laminate/rest/carve process. See section 17.
+
 **Quench**, the shop's neck process: kiln-roasted in-house, five quartersawn strips with alternating grain, rested 60+ days, then hand-carved. It appears on home, models, every model page (callout plus spec row), craftsmanship (full section and diagram), FAQ, warranty and the roasted-maple journal post. It is always described as a workshop process, explicitly "not a patent or certification". Claims are framed as intent ("built to resist seasonal movement"), not measured results.
 
 ## 9. Scarcity and capture (High): Resolved
 
-- **12 build slots per quarter**, stated consistently, with slots opening to the waitlist first. No fake "only 2 left" counters.
+- **12 build slots per quarter** *(superseded 13 Oct 2026: 6 a quarter)*, stated consistently, with slots opening to the waitlist first. No fake "only 2 left" counters.
 - **Founders' Run:** Nos. 1–25 in the single build sequence (every instrument is numbered from No. 1), with a brass number plate and lifetime free setups. The run closes permanently after No. 25.
 - **Waitlist capture:** a footer form on every page (Netlify form `waitlist`), plus an opt-in checkbox on the build request. Wired exactly like the other forms.
 
 ## 10. Pricing (High): Resolved
 
-Base prices are Tephra $4,800, Rhyolite $5,200, Basalt $5,900 and Scoria $6,400, identical on home, models, model pages, schema, the custom shop, the FAQ and the journal. Upgrade tiers (wood grade, finish, hardware, inlays and configuration) are listed once in the custom shop (`#pricing`). Deposit terms are a single sentence, generated from one constant, and appear **verbatim** in the custom shop, FAQ (visible text and FAQPage schema), terms of sale and the cost guide. Verified by script.
+Base prices are Andesite $4,600, Tephra $4,800, Rhyolite $5,200, Basalt $5,900 and Scoria $6,400 (Founders' Run prices for Nos. 1–25 added 13 Oct 2026, see section 17), identical on home, models, model pages, schema, the custom shop, the FAQ and the journal. Upgrade tiers (wood grade, finish, hardware, inlays and configuration) are listed once in the custom shop (`#pricing`). Deposit terms are a single sentence, generated from one constant, and appear **verbatim** in the custom shop, FAQ (visible text and FAQPage schema), terms of sale and the cost guide. Verified by script.
 
 ## 11. og-image and favicon in every head: Resolved
 
@@ -114,6 +117,19 @@ Skip link (first tab stop, verified), `<main id="main">`, FAQ questions are `<bu
 ## 16. Positioning and voice: Resolved
 
 The homepage and key copy were rewritten around one point of view: *built slow, on purpose; proof over adjectives*. The voice guide is in `docs/BRAND.md`.
+
+## 17. Sourcing, neck woods, pricing and capacity (Critical, 13 Oct 2026): Resolved, owner action needed
+
+**Finding:** the owner decided necks and bodies are bought to Obsidian's specs, with finishing, fretwork and setup done in-house. The site claimed an in-house kiln, five-piece laminated necks, 60-day neck rests, hand-carved necks and tops, board selection, supplier/board-ID/batch records, and one luthier building each guitar from rough board to setup. All of these became false.
+
+**Now:**
+- Every such claim was removed or rewritten across all pages, the footer, meta/og/twitter descriptions, JSON-LD, the FAQ schema, the blog (the roasted-maple post still explains roasting in general but no longer says we roast), `assets/quench-neck.svg` (relabelled; the laminated strips are drawn as one plain section) and `assets/provenance.svg` (label text).
+- Quench is now the neck standard: made to spec, then frets, nut, finish and setup by hand in our shop.
+- Neck woods: mahogany standard on the Basalt, roasted maple standard on the other four with mahogany at +$150 (placeholder). The configurator has a Neck wood group, a `neck` URL parameter and per-model defaults.
+- Founders' Run pricing (Nos. 1–25), 6 build slots a quarter, 16–24 week lead time plus about 4 weeks for nitro, and the deposit trigger "until your components are ordered".
+- Verified with a case-insensitive grep audit of `*.html`, `blog/*.html`, `js/*.js` and `assets/*.svg` (zero hits for the old claims), the configurator tests (including new neck and Founders' checks), the link crawl, the mobile and overlap sweeps, and JSON-LD parsing.
+
+**Owner:** confirm the +$150 mahogany price, that assembly and wiring are done in-house, the Reserve grade's "choose a board on video", and how Founders' numbering interacts with quoted prices (README, "Business facts to confirm").
 
 ---
 

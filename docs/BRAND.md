@@ -1,6 +1,39 @@
 # Obsidian Guitars: brand decision log
 
-Every business and brand decision made for launch, with the reasoning. The owner delegated full authority for these calls. Anything marked **(placeholder)** must be confirmed or replaced before launch (see the README checklist).
+Every business and brand decision made for launch, with the reasoning. The owner delegated full authority for these calls. Anything marked **(placeholder)** must be confirmed or replaced before launch (see the README checklist). Where a later decision replaces an earlier one, the earlier text is kept and marked **Superseded**; section 0 is the current source of truth.
+
+---
+
+## 0. October 2026 owner decisions (13 October 2026)
+
+### Sourcing (internal, factual)
+- **Necks and bodies are bought** from specialist makers, built to Obsidian's specs: woods, profile, radius, fret size, routing.
+- **In-house:** finishing (paint and lacquer), fretwork (leveling, crowning, polishing, nut work) and setup. Final assembly and wiring are treated as part of setup and are described publicly only as "assembly" (**owner to confirm**, see README).
+- **Public copy rules:** never name or mention suppliers, and don't volunteer "outsourced". Say what is true: the design is ours; the components are made to our specification; each guitar is finished, fretted and set up by hand in our shop by one person, who signs the build sheet; the 37-point setup and inspection. Never claim board selection, an in-house kiln or roasting, laminated/five-piece necks, neck rests, hand carving of necks or tops, chambering or routing by the shop, or one luthier building "start to finish". "Carved maple top" and "chambered" are fine as product specs.
+- **Build sheet / Provenance File** records the spec, the wood species and grades, and the final setup measurements (action, relief, pickup heights, weight), plus the instrument number and the signature of the person who finished and set up the guitar. No supplier, board ID or batch numbers.
+- **Quench is redefined** as Obsidian's neck standard, not a manufacturing process: every neck, maple or mahogany, is made to our profile specs (or the customer's measurements), then the frets are leveled, crowned and polished, the nut is cut and fitted by hand, and the neck is finished and set up to the customer's measurements in our shop.
+- **Founder persona:** Elias Marr keeps the repair-bench origin; he no longer builds from raw wood. The bench is why the shop concentrates on fretwork, finish and setup.
+
+### Neck woods
+- **Basalt:** standard neck is **mahogany**, glued-in set neck; roasted maple is an option at no charge.
+- **Andesite, Tephra, Rhyolite, Scoria:** standard neck is **roasted maple** (made to spec); **mahogany is +$150** (placeholder, to confirm against supplier costs).
+- A roasted-maple fretboard stays available with a mahogany neck: it's a separate glued-on board, and the configurator says so.
+
+### Founders' Run pricing (Nos. 1–25 only)
+| Model | List base | Founders' base |
+|---|---|---|
+| Andesite | $4,600 | $3,900 |
+| Tephra | $4,800 | $4,100 |
+| Rhyolite | $5,200 | $4,400 |
+| Basalt | $5,900 | $5,000 |
+| Scoria | $6,400 | $5,400 |
+
+Upgrades are charged at list. Rationale for copy: early buyers are taking a chance on a new builder, and they also get a low number, a brass plate and free setups for life. Presented as a launch price for the first 25 instruments, never as a discount gimmick: no countdowns, no "only X left". At 6 slots a quarter the run fills in about a year; never state a date. List prices and all other upgrade prices are unchanged. Product schema keeps `price` at the list base.
+
+### Capacity and lead time
+- **6 build slots a quarter** (was 12).
+- **Lead time: 16–24 weeks from deposit, plus about 4 weeks for a nitrocellulose finish** (was 12–16 weeks). The terms keep the "more than four weeks late, you may cancel" clause.
+- **Deposit sentence** now reads "until your components are ordered" instead of "until your wood is cut" (the shop no longer cuts wood). See section 5.
 
 ---
 
@@ -8,7 +41,7 @@ Every business and brand decision made for launch, with the reasoning. The owner
 
 **Decision:** Obsidian is a small, accountable workshop that builds a limited number of electric guitars to order, and proves its quality with process and paperwork rather than adjectives.
 
-**One-line POV:** *Electric guitars, built one at a time by the person who signs for them.*
+**One-line POV:** *Electric guitars, finished one at a time by the person who signs for them.* (Changed 13 Oct 2026 from "built", see section 0.)
 
 **Why:** A buyer who sees an Obsidian in the wild and looks it up has to believe it's worth several thousand dollars, from a brand with no history, no reviews and no famous players. The only honest levers a new brand has are (a) a visible, specific process, (b) a named person accountable for each instrument, (c) documented provenance, and (d) real scarcity. The positioning is built around those four. Brands in this space (for example the minimal, visuals-first approach the owner admired) win on restraint and specificity. We take the same posture without borrowing any of their language or marks.
 
@@ -31,6 +64,8 @@ Every business and brand decision made for launch, with the reasoning. The owner
 **Andesite (added Oct 2026, owner decision):** a T-style was the biggest gap in the lineup: it's one of the most popular boutique shapes, and the existing piano-key guitar on the market is T-style. Its outline is drawn as our own; don't copy any manufacturer's exact body or headstock. Use industry terms (S-style, T-style, single-cut) on the site, never "Strat", "Tele" or "Les Paul", which are Fender and Gibson trademarks.
 
 ## 3. Signature differentiator: the Quench neck
+
+> **Superseded (13 Oct 2026):** Quench is now a neck standard, not an in-house roast/laminate/rest/carve process. See section 0. The original decision is kept below for the record.
 
 **Decision:** Every Obsidian neck goes through **Quench**, an in-house process:
 1. **Roast:** maple roasted in our own kiln on a slow, staged schedule.
@@ -59,6 +94,8 @@ Every business and brand decision made for launch, with the reasoning. The owner
 
 **Why:** The old $4,200–$5,100 range sat at the bottom of boutique pricing and undercut the "worth thousands" goal. The new base prices put Obsidian alongside established independent builders and big-brand custom shops, with typical finished builds at $5,500–$8,000. The order reflects real labour: slab-body bolt-on (Andesite, the entry point) < contoured bolt-on (Tephra, Rhyolite with chambering) < carved top + set neck + binding (Basalt) < headless hardware + multiscale + chambering (Scoria).
 
+> **Superseded in part (13 Oct 2026):** list prices are unchanged, but Founders' Run base prices and the +$150 mahogany neck option were added. See section 0.
+
 **Every base price includes:** Quench neck, stainless frets, locking tuners, bone or graphite nut, 37-point setup, hardshell case, Provenance File.
 
 **Upgrade tiers:**
@@ -85,15 +122,15 @@ Shipping and duties are quoted at the spec stage.
 
 ## 5. Deposit terms (single source of truth)
 
-> A 30% deposit reserves your build slot once you approve your written spec and fixed quote. It is fully refundable until your wood is cut, less the cost of any parts already ordered for your build; once construction begins it is non-refundable. The remaining 70% is due when your guitar passes final inspection, before it ships.
+> A 30% deposit reserves your build slot once you approve your written spec and fixed quote. It is fully refundable until your components are ordered, less the cost of any parts already ordered for your build; once construction begins it is non-refundable. The remaining 70% is due when your guitar passes final inspection, before it ships.
 
-**Why 30% (down from 50%):** It lowers the commitment barrier for a brand with no track record, while still covering materials and a meaningful share of labour. Making refundability depend on whether the wood has been cut is fair and easy to explain, and it builds trust. It works with a deposit-then-balance checkout (two payments). It appears verbatim in the custom shop, FAQ, terms and the cost guide; change it in all four together.
+**Why 30% (down from 50%):** It lowers the commitment barrier for a brand with no track record, while still covering materials and a meaningful share of labour. (13 Oct 2026: the trigger changed from "your wood is cut" to "your components are ordered", because the shop no longer cuts wood.) Making refundability depend on when we commit money to your build is fair and easy to explain, and it builds trust. It works with a deposit-then-balance checkout (two payments). It appears verbatim in the custom shop, FAQ, terms and the cost guide; change it in all four together.
 
 Also decided: a fixed written quote before any payment, a target ship month on every quote, and a cancellation right if a build slips more than four weeks.
 
 ## 6. Scarcity model
 
-- **12 build slots per quarter** (about one guitar a week from one bench, allowing for Quench batches, finishing cure times and setup). Slots open to the waitlist first.
+- ~~12 build slots per quarter~~ **Superseded (13 Oct 2026): 6 build slots per quarter.** See section 0. Slots open to the waitlist first.
 - **Owner decisions (Oct 2026):**
   - **Every guitar is built to order.** There are no stock builds, ever.
   - **Every instrument is numbered in one sequence across all models, starting at No. 1.** Numbers are never reused.
@@ -105,6 +142,8 @@ Also decided: a fixed written quote before any payment, a target ship month on e
 
 ## 7. Founder persona (placeholder)
 
+> **Superseded in part (13 Oct 2026):** the kiln, garage-building and roasting story is retired. Elias keeps the repair-bench origin; the site no longer says he builds from raw wood. See section 0.
+
 **Elias Marr, founder and luthier.** He spent close to a decade running the repair bench at a busy music shop, where he kept seeing expensive guitars come in with moving necks, lifting frets and finishes hiding sloppy fretwork. He started building at night in a two-bay garage with a secondhand ceramics kiln from a closing pottery studio. Experiments with roasting and resting his own maple became Quench. The name "Obsidian" came from the kiln: lava that cools too fast to organise itself, and a reminder to do the opposite.
 
 **Why:** A repair-bench origin gives instant authority on what fails, which is the exact anxiety of a $5,000 buyer. It ties directly to the differentiator, and it's modest and believable. A second bench is shown honestly as "opening 2027".
@@ -113,7 +152,7 @@ Also decided: a fixed written quote before any payment, a target ship month on e
 
 ## 8. Proof assets
 
-- **Provenance File** (certificate of authenticity): serial stamped in the neck heel and logged in a build register, signed build sheet with setup measurements, wood-source record (supplier, board ID, Quench batch), luthier signature.
+- **Provenance File** (certificate of authenticity): serial stamped in the neck heel and logged in a build register, signed build sheet with setup measurements, a wood record (species and grade), and the signature of the person who finished and set up the guitar. (13 Oct 2026: supplier, board ID and Quench batch removed.)
 - **Build journal:** private photos and notes at six stages, archived with the serial for future owners.
 - **Second-owner registration:** a five-year warranty from the original ship date for registered second owners. This supports resale value, which supports the price.
 - **Artist program:** artist rate plus priority slot in exchange for honest written feedback. No paid endorsements, no scripted content, and no names listed until they've played the guitar.
@@ -142,7 +181,7 @@ Also decided: a fixed written quote before any payment, a target ship month on e
 **In one line:** a luthier talking across the bench. Calm, specific, a little dry, and never selling.
 
 **Principles**
-1. **Specific over superlative.** "Rested 60 days" beats "unparalleled stability". If a sentence works for any brand, cut it.
+1. **Specific over superlative.** "Frets leveled and crowned by hand" beats "unparalleled stability". If a sentence works for any brand, cut it.
 2. **Short declaratives.** Lead with the fact. Most sentences under 20 words.
 3. **Proof, not adjectives.** Prefer numbers, materials, steps and paperwork. If we can't prove it, we don't say it.
 4. **Honest about trade-offs.** Say what roasted maple, nitro or headless designs *don't* do well. Candour is the brand.

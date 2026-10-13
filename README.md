@@ -1,6 +1,6 @@
 # Obsidian Guitars: website
 
-A static website (plain HTML/CSS/JS, no build step) for **Obsidian Guitars** (Obsidian Instruments Co.), a small workshop that hand-builds electric guitars to order.
+A static website (plain HTML/CSS/JS, no build step) for **Obsidian Guitars** (Obsidian Instruments Co.), a small workshop that makes electric guitars to order. Necks and bodies are made to Obsidian's specification; the shop does the finishing, fretwork and setup (see `docs/BRAND.md`, "October 2026 owner decisions").
 
 - Brand and business decisions, with reasons: [`docs/BRAND.md`](docs/BRAND.md)
 - Audit findings and how each was resolved: [`docs/AUDIT.md`](docs/AUDIT.md)
@@ -37,8 +37,8 @@ All product imagery is illustrated SVG renders (`assets/render-*.svg`, rasters i
 | `index.html` hero | Your own bench or build photo, 4:3 | placeholder stock photo, see below |
 | `about.html` portraits | Founder at the bench, 4:5. **No stock photos.** | `<!-- REPLACE: founder portrait ... -->` |
 | Placeholder stock photos (`assets/photos/*.jpg`) on home, craftsmanship, about and custom shop | Your own shop photos, same crops | `<!-- REPLACE: placeholder stock photo (Unsplash) ... -->`; sources and licence in [`docs/CREDITS.md`](docs/CREDITS.md) |
-| `about.html` workshop | Bench, kiln, resting room | `<!-- REPLACE: workshop photographs -->` |
-| `craftsmanship.html` | Board selection photo; workshop film | `<!-- REPLACE: workshop photograph ... -->` |
+| `about.html` workshop | Bench, finishing booth, fret and setup bench | `<!-- REPLACE: workshop photographs -->` |
+| `craftsmanship.html` | Fretwork or finishing photo; workshop film | `<!-- REPLACE: workshop photograph ... -->` |
 | `model-*.html` "Hear it" | One video and two audio clips per model | `<!-- REPLACE: video embed ... -->` / `audio embed` |
 | `assets/og-image.png` | Social share image, 1200×630 | regenerate with a real photo |
 | `assets/render-*.jpg` | Used by Product schema and model og:image | replace with photos |
@@ -75,7 +75,14 @@ No payments are integrated. The copy already describes the flow: **written spec 
 
 ### 8. Business facts to confirm
 
-These are stated on the site; change them everywhere if they're wrong: 12 build slots per quarter; every instrument numbered in one sequence from No. 1 (stamped in the heel); Founders' Run = Nos. 1–25 (brass number plate, free setups for life); built to order only, no stock; no ivory or protected-species materials (stated on the terms page only); 12–16 week build time; 60-day neck rest; 37-point setup; base prices and upgrade tiers (`custom-shop.html#pricing` **and** the price constants at the top of `js/configurator.js`, which must match); lifetime warranty for the original owner plus 5 years for registered second owners.
+These are stated on the site; change them everywhere if they're wrong: 6 build slots per quarter; every instrument numbered in one sequence from No. 1 (stamped in the heel); Founders' Run = Nos. 1–25 (brass number plate, free setups for life, Founders' base prices Andesite $3,900 / Tephra $4,100 / Rhyolite $4,400 / Basalt $5,000 / Scoria $5,400, upgrades at list; in `custom-shop.html#pricing`, the FAQ, the model pages, `index.html`, `models.html` and the `founders` values in `js/configurator.js`); built to order only, no stock; no ivory or protected-species materials (stated on the terms page only); 16–24 week build time from deposit, plus about 4 weeks for nitro; 37-point setup; base prices and upgrade tiers (`custom-shop.html#pricing` **and** the price constants at the top of `js/configurator.js`, which must match); lifetime warranty for the original owner plus 5 years for registered second owners.
+
+**To confirm (October 2026 decisions):**
+- **Mahogany neck on bolt-on models, +$150: placeholder, to confirm** against supplier costs. It appears in `custom-shop.html#pricing`, on the four bolt-on model pages and as `NECK_MAHOGANY_PRICE` in `js/configurator.js`.
+- **Assembly and wiring.** The site treats final assembly and wiring as part of the in-house setup and mentions them only as "assembly". Confirm this is how the shop actually works; if wiring is done elsewhere, remove "assembly" from the craftsmanship stages, the homepage builder panel and the custom-shop process.
+- **Reserve wood grade** still says "a single bookmatched board you choose with us on video". Confirm the body maker can support choosing a top on video; otherwise reword the tier.
+- **Founders' Run eligibility.** Numbers are assigned in the order guitars are completed, but the price is quoted at deposit. Decide how a Founders' price is honoured if a build's completion order changes.
+- **Deposit wording.** "Fully refundable until your components are ordered, less the cost of any parts already ordered; non-refundable once construction begins" leaves a gap between ordering and construction. Have the lawyer check it alongside the terms.
 
 ---
 
