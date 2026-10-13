@@ -101,20 +101,31 @@
   </nav>
 </header>
 <main id="main">
+<section class="model-hero" data-scrollfx="out" aria-labelledby="model-title">
 <nav class="wrap crumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="models.html">Models</a></li><li aria-current="page">The Andesite</li></ol></nav>
-<section class="page-top" style="padding-top:20px;">
+  <div class="wrap model-hero-title">
+    <span class="label">T-style</span>
+    <h1 id="model-title">The Andesite</h1>
+  </div>
+  <div class="model-stage" id="model-stage">
+    <span class="glow" aria-hidden="true"></span>
+    <!-- REPLACE: studio photograph of the finished Andesite (transparent or dark background; cutouts live in assets/cutout/). Keep the alt text. -->
+    <img src="assets/cutout/render-andesite.svg" alt="Obsidian Andesite T-style in natural swamp ash with a roasted maple fretboard" width="1560" height="570" fetchpriority="high">
+    <img class="alt" src="assets/cutout/render-andesite-bone.svg" alt="Obsidian Andesite T-style in Bone White gloss with a roasted maple fretboard" width="1560" height="570" aria-hidden="true">
+  </div>
   <div class="wrap">
-    <figure class="render bleed"><img src="assets/render-andesite.svg" alt="Obsidian Andesite T-style in natural swamp ash with a roasted maple fretboard" width="1600" height="800" fetchpriority="high"></figure>
-    <!-- REPLACE: studio photograph of the finished Andesite (2:1, dark background). Keep the alt text. -->
-    <div class="two-col top" style="margin-top:30px;">
+    <div class="model-hero-body">
       <div>
-        <span class="label">T-style</span>
-        <h1>The Andesite</h1>
         <div class="price-big">From $4,600</div>
         <div class="price-sub">Base price, built to order. Upgrades are listed in the <a href="custom-shop.html#pricing">Custom Shop</a>.</div>
         <div class="hero-actions" style="margin-top:0;">
           <a href="custom-shop.html?model=andesite#configure" class="btn solid">Configure the Andesite</a>
           <a href="#waitlist" class="btn">Join the waitlist</a>
+        </div>
+        <div class="finish-toggle" data-finish-toggle data-target="#model-stage" role="group" aria-label="Finish shown" hidden>
+          <span class="ft-label">Shown in</span>
+          <button type="button" data-finish="std" aria-pressed="true"><span class="sw" style="--sw:#d49c58" aria-hidden="true"></span>Natural swamp ash</button>
+          <button type="button" data-finish="alt" aria-pressed="false"><span class="sw" style="--sw:#e2dac8" aria-hidden="true"></span>Bone White gloss</button>
         </div>
       </div>
       <div>

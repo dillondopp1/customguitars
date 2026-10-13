@@ -101,20 +101,31 @@
   </nav>
 </header>
 <main id="main">
+<section class="model-hero" data-scrollfx="out" aria-labelledby="model-title">
 <nav class="wrap crumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="models.html">Models</a></li><li aria-current="page">The Rhyolite</li></ol></nav>
-<section class="page-top" style="padding-top:20px;">
+  <div class="wrap model-hero-title">
+    <span class="label">Chambered offset</span>
+    <h1 id="model-title">The Rhyolite</h1>
+  </div>
+  <div class="model-stage" id="model-stage">
+    <span class="glow" aria-hidden="true"></span>
+    <!-- REPLACE: studio photograph of the finished Rhyolite (transparent or dark background; cutouts live in assets/cutout/). Keep the alt text. -->
+    <img src="assets/cutout/render-rhyolite.svg" alt="Obsidian Rhyolite chambered offset in Ember burst with cream P-90 pickups" width="1560" height="570" fetchpriority="high">
+    <img class="alt" src="assets/cutout/render-rhyolite-sage.svg" alt="Obsidian Rhyolite chambered offset in solid Lichen Sage" width="1560" height="570" aria-hidden="true">
+  </div>
   <div class="wrap">
-    <figure class="render bleed"><img src="assets/render-rhyolite.svg" alt="Obsidian Rhyolite chambered offset in Ember burst with cream P-90 pickups" width="1600" height="800" fetchpriority="high"></figure>
-    <!-- REPLACE: studio photograph of the finished Rhyolite (2:1, dark background). Keep the alt text. -->
-    <div class="two-col top" style="margin-top:30px;">
+    <div class="model-hero-body">
       <div>
-        <span class="label">Chambered offset</span>
-        <h1>The Rhyolite</h1>
         <div class="price-big">From $5,200</div>
         <div class="price-sub">Base price, built to order. Upgrades are listed in the <a href="custom-shop.html#pricing">Custom Shop</a>.</div>
         <div class="hero-actions" style="margin-top:0;">
           <a href="custom-shop.html?model=rhyolite#configure" class="btn solid">Configure the Rhyolite</a>
           <a href="#waitlist" class="btn">Join the waitlist</a>
+        </div>
+        <div class="finish-toggle" data-finish-toggle data-target="#model-stage" role="group" aria-label="Finish shown" hidden>
+          <span class="ft-label">Shown in</span>
+          <button type="button" data-finish="std" aria-pressed="true"><span class="sw" style="--sw:#a62b1c" aria-hidden="true"></span>Ember burst</button>
+          <button type="button" data-finish="alt" aria-pressed="false"><span class="sw" style="--sw:#7f8f74" aria-hidden="true"></span>Lichen Sage</button>
         </div>
       </div>
       <div>
