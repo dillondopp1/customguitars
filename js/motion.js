@@ -175,19 +175,22 @@
     }
     function step(d) { go((current + d + items.length) % items.length); }
 
-    /* swipe / drag on the stage */
+    /* swipe (touch) and drag (mouse) on the stage */
     var sx = null, sy = 0, st = 0;
-    list.addEventListener('pointerdown', function (e) {
-      if (!e.target.closest('.lineup-stage')) return;
-      sx = e.clientX; sy = e.clientY; st = Date.now();
-    });
-    list.addEventListener('pointerup', function (e) {
+    function begin(x, y, target) {
+      if (!target.closest || !target.closest('.lineup-stage')) return;
+      sx = x; sy = y; st = Date.now();
+    }
+    function end(x, y) {
       if (sx === null) return;
-      var dx = e.clientX - sx, dy = e.clientY - sy;
+      var dx = x - sx, dy = y - sy;
       sx = null;
       if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.2 && Date.now() - st < 1200) step(dx < 0 ? 1 : -1);
-    });
-    list.addEventListener('pointercancel', function () { sx = null; });
+    }
+    list.addEventListener('touchstart', function (e) { var t = e.changedTouches[0]; begin(t.clientX, t.clientY, e.target); }, { passive: true });
+    list.addEventListener('touchend', function (e) { var t = e.changedTouches[0]; end(t.clientX, t.clientY); }, { passive: true });
+    list.addEventListener('pointerdown', function (e) { if (e.pointerType === 'mouse') begin(e.clientX, e.clientY, e.target); });
+    list.addEventListener('pointerup', function (e) { if (e.pointerType === 'mouse') end(e.clientX, e.clientY); });
     list.addEventListener('dragstart', function (e) { if (e.target.closest('.lineup-stage')) e.preventDefault(); });
 
     var start = 0;

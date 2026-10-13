@@ -802,3 +802,11 @@ article.post .related ul{padding-left:0;}
 .lineup-head h1{font-size:clamp(2.6rem,4.8vw,4.8rem);}
 .photo-split h1{font-size:clamp(2.5rem,4.4vw,4.4rem);}
 @media(max-width:900px){.lineup-item:nth-child(even){grid-template-columns:minmax(0,1fr);}}
+/* first section with no breadcrumb (thanks) clears the fixed header */
+main > section.page-top:first-child{padding-top:calc(var(--header-h) + clamp(56px,10vh,120px));}
+/* long-form text pages (legal, warranty) */
+.narrow > h2{font-size:clamp(1.5rem,2.2vw,1.9rem);margin:1.9em 0 .5em;}
+.narrow > h2:first-of-type{margin-top:1.4em;}
+.narrow > h3{margin-top:1.4em;}
+.narrow > ul,.narrow > ol{color:var(--body);padding-left:1.2em;}
+.narrow li::marker{color:var(--ember);}
